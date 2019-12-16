@@ -25,7 +25,7 @@ connection.connect(function (err) {
 
 let renderProducts = () => {
 
-    var queryString = "SELECT * FROM products"; // selects all of the columns/rows in the database.
+    let queryString = "SELECT * FROM products"; // selects all of the columns/rows in the database.
     connection.query(queryString, function (error, results) { // makes the connection query to mysql database.
         if (error) throw error;
         console.log(chalk.black.cyan.bold("------------------------------------------------------------------------------------------------------------------------------------------------\n                                     Welcome To BAMAZON! Please check the list below for available items.                 \n------------------------------------------------------------------------------------------------------------------------------------------------"))
@@ -78,8 +78,8 @@ function pullProduct(itemID, itemAmt) {
 };
 
 function orderComplete(productObject, itemID, itemAmt) {
-    var newStockAmt = productObject.stock_quantity - itemAmt; // take sold items away from total stock
-    var dataQuery = "UPDATE products SET stock_quantity = ? WHERE ?";
+    let newStockAmt = productObject.stock_quantity - itemAmt; // take sold items away from total stock
+    let dataQuery = "UPDATE products SET stock_quantity = ? WHERE ?";
     // below updates database with the new stock amount 
     connection.query(dataQuery, [newStockAmt, {
         item_id: itemID // limits deprecating values to the specific item (WHERE ?)
