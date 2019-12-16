@@ -12,7 +12,7 @@ Bamazon makes use of Node.js and MySQL to simulate a sales database similar to A
 - Then you'll be asked how many of that item you'd like. Type in the amount and hit Return.
   ![howmany](./images/how-many.png)
 - Then you'll be presented with your item:
-  ![response](./images/response.png)
+  ![response](./images/response1.png)
 - After that, the database is updated and the stock amount is adjusted.
   Database before any sales.
   ![tablebefore](./images/databefore.png)

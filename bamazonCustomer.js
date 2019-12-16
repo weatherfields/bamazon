@@ -63,7 +63,7 @@ function pullProduct(itemID, itemAmt) {
                 chosenProduct = res[i]
             }
         }
-        console.log(chosenProduct, "Your product was found")
+        console.log(chosenProduct, "Here is your item. Thanks for shopping at Bamazon!")
         // then their purchase is logged into the stock_quantitiy and the amount left is changed in the database by calling orderComplete.
         if (chosenProduct.stock_quantity >= itemAmt) {
             orderComplete(chosenProduct, itemID, itemAmt)
