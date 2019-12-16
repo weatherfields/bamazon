@@ -14,10 +14,10 @@ Bamazon makes use of Node.js and MySQL to simulate a sales database similar to A
 - Then you'll be presented with your item:
   ![response](./images/response1.png)
 - After that, the database is updated and the stock amount is adjusted.
-  Database before any sales.
-  ![tablebefore](./images/databefore.png)
-  Database after two separate orders (see top two item amounts)
-  ![tableafter](./images/dataafter2.png)
+  - Database before any sales:
+    ![tablebefore](./images/databefore.png)
+  - Database after two separate orders (see top two item amounts):
+    ![tableafter](./images/dataafter2.png)
 - If you mispell something or enter a quantity greater than what's available, you'll be shown the message below:
   ![tableafter](./images/mistype.png)
 
